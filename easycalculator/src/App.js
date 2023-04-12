@@ -47,52 +47,32 @@ class Calculator extends Component {
     }
 
     render() {
-        return ( <
-            div >
-            <
-            br / >
-            <
-            br / >
-            <
-            br / >
-            <
-            br / >
-            <
-            br / >
-            <
-            br / >
-            <
-            br / >
-            <
-            h1 > Easy Calculator < /h1> <
-            h2 > Enter the Numbers： < /h2> <
-            input type = "number"
-            value = { this.state.num1 }
-            onChange = { this.handleNum1Change }
-            placeholder = "Number" /
-            >
-            &
-            ensp; <
-            input type = "number"
-            value = { this.state.num2 }
-            onChange = { this.handleNum2Change }
-            placeholder = "Number" /
-            >
-            <
-            br / >
-            <
-            h3 > Choose the Mode: 　 < /h3> <
-            button onClick = { this.handleAddition } > + < /button> &
-            ensp; <
-            button onClick = { this.handleSubtraction } > - < /button> &
-            ensp; <
-            button onClick = { this.handleMultiplication } > * < /button> &
-            ensp; <
-            button onClick = { this.handleDivision } > / </button >
-            &
-            ensp; <
-            p > Calculated result: { this.state.result } < /p> <
-            /div>
+        return ( 
+            <div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <h1> Easy Calculator </h1> 
+            <h2> Enter the Numbers： </h2> 
+            <input type = "number" value = { this.state.num1 } onChange = { this.handleNum1Change } placeholder = "Number"/>
+            &ensp; 
+            <input type = "number" value = { this.state.num2 } onChange = { this.handleNum2Change } placeholder = "Number"/>
+            <br />
+            <h3> Choose the Mode: </h3> 
+            <button onClick = { this.handleAddition } > + </button>
+            &ensp; 
+            <button onClick = { this.handleSubtraction } > - </button> 
+            &ensp; 
+            <button onClick = { this.handleMultiplication } > * </button> 
+            &ensp;
+            <button onClick = { this.handleDivision } > / </button>
+            &ensp;
+            <p> Calculated result: { this.state.result } </p> 
+            </div>
         );
     }
 }
