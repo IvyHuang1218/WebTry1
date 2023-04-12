@@ -13,8 +13,7 @@ h1 {
   -webkit-text-fill-color: black;
 }
 
-h2,
-h3 {
+h2, h3 {
   font-family: Arial;
   font-size: 24pt;
   font-weight: bold;
